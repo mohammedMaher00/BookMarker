@@ -1,0 +1,59 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+table a{
+    text-decoration: none;
+    color: white;
+}
+
+
+body{
+    font-family: 'PT Sans Caption', sans-serif;  
+
+}
+.back-g{
+    background-color: #f7ecde;
+}
+h1{
+
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    width: fit-content;
+    
+    overflow: hidden;
+
+  
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 5px;
+    background-color: #fec260;
+    transition: all 0.5s;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 60%;
+}
+h2{
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.bookmark-body{
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+}
+
+
+
+
+  
+ 

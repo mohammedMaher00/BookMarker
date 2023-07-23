@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    
+  
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body class="back-g">
+
+
+<div class="container ">
+    <div class="bookmark-header py-5">
+        <h1 class="text-center mx-auto  display-5 " >Bookmarker</h1>
+    </div>
+    <div class="bookmark-body p-5">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center gap-2 justify-content-center mb-4 bookmark-head">
+    
+                    <h2><i class="fa-solid fa-bookmark fs-4"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark fs-4"></i></h2>
+                    
+                    </div>
+            </div>
+        </div>
+       
+
+<div class=" mx-auto">
+    <i class="fa-solid fa-book-bookmark"></i>
+<label for="Site Name" class="fw-bold">Site Name</label>
+<input type="text" name="" id="siteName" class="form-control mb-4 " placeholder="Bookmark Name" required>
+<p id="checkName" class="d-none text-danger fw-bold ms-1 mt-3" >Please Enter Another Name (Duplicated Name) &nbsp; <i class="fa-solid fa-exclamation"></i></p>
+<p id="checkName2" class="d-none text-danger fw-bold">Site name must contain at least 3 characters <i class="fa-solid fa-exclamation"></i> </p>
+<i class="fa-solid fa-link"></i>
+<label for="SiteURL" class="fw-bold">Site URL</label>
+<input type="url" name="" id="siteURL" class="form-control" placeholder="Site URL">
+<p id="checkUrl" class="d-none text-danger fw-bold ms-1 mt-3" >Please Enter a Valid URL &nbsp; <i class="fa-solid fa-exclamation"></i>
+<br>
+1-Url must start with http//: or https//: <br>
+2-then www.example.com/
+</p>
+
+<div class="d-flex justify-content-center ">
+    <button  onclick="addSites()" class="btn btn-danger mt-3 px-5 ">submit</button></div>
+</div>
+
+
+    </div>
+
+</div>
+
+<div class="container">
+    <table class="table mt-3 text-center">
+        <thead>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </thead>
+
+    </table>
+</div>
+
+
+
+
+
+
+    
+    <script src="./assets/js/index.js"></script>
+    
+</body>
+</html>
